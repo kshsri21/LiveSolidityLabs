@@ -1,5 +1,5 @@
-const demo = artifacts.require("demo");
+const demo = artifacts.require("TweetContract");
 
-module.exports = function (deployer) {
-  deployer.deploy(demo);
+module.exports = function (deployer,accounts) {
+  deployer.deploy(demo,accounts);
 };
